@@ -119,8 +119,17 @@ body{
   to{border-right-color: transparent;}
 }
 
- @media only screen and (max-width: 768px) {
- .title {
-    width: 90%;
-  }
+@media only screen and (max-width: 768px) {
+    .title {
+       width: 90%;
+     }
+   }
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    color: red;
 }
