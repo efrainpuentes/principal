@@ -118,3 +118,9 @@ body{
   from{border-right-color: #0eeb1f;}
   to{border-right-color: transparent;}
 }
+
+ @media only screen and (max-width: 768px) {
+ .title {
+    width: 90%;
+  }
+}
