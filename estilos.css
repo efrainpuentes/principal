@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 body{
 
     display: flex;
@@ -12,7 +16,8 @@ body{
 
 
 .title{
-    display: flex;
+    margin-top: 45em;
+    margin-bottom: 2em;
     border: 1px solid;
     padding: 1em;
     justify-content: center;
@@ -24,16 +29,20 @@ body{
     font-weight: 100;
 }
 
+
+h1{
+    text-align: center;
+}
+
 .glider{
     width: 306px;
     height: 306px;
     border: 1px solid #0eeb1f;
-    margin: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     animation-name: glider;
-    animation-duration: 10s;
+    animation-duration: 5s;
 }
 
 .textillo{
@@ -58,6 +67,10 @@ body{
     }
 }
 
+.humilde{
+    color: red;
+}
+
 .cell{
     width: 100px;
     height: 100px;
@@ -79,12 +92,10 @@ body{
 
 /* Animación */
 
-/* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 html{
   min-height: 100%;
-  overflow: hidden;
 }
 body{
   height: calc(100vh - 8em);
@@ -119,11 +130,62 @@ body{
   to{border-right-color: transparent;}
 }
 
-@media only screen and (max-width: 768px) {
-    .title {
-       width: 90%;
+@media only screen and (max-width: 400px) {
+
+    .line-1{
+        position: relative;
+        top: 50%;  
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255,255,255,.75);
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);    
+    }
+
+
+    .title{
+        width: 110%;
+        margin-top: 45em;
+        margin-bottom: 2em;
+        border: 1px solid;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    .quote{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .me{
+    }
+
+
+     .autor{
+         display: block;
+         margin: 10px;
      }
+
+     .texto-chafa{
+         text-align: center;
+     }
+
+    .glider{
+        margin-bottom: 2em;
+    }
+
+    .sub-proyectos{
+        margin-bottom: 5px;
+    }
+     
+
    }
+
 
 a{
     text-decoration: none;
