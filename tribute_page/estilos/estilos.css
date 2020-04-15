@@ -179,12 +179,11 @@ a:link{
 
 
 @media only screen and (max-width: 400px) {
-   #image{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-       max-width: 50%;
-   }
+    #image{
+        display: block;
+        max-width: 80%;
+        height: auto;
+        margin: auto;
 }
 
 @media only screen and (max-width: 400px) {
