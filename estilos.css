@@ -16,7 +16,7 @@ body{
 
 
 .title{
-    margin-top: 45em;
+    margin-top: 0;
     margin-bottom: 2em;
     border: 1px solid;
     padding: 1em;
@@ -34,6 +34,10 @@ h1{
     text-align: center;
 }
 
+.texto-chafa{
+    text-align: justify;
+}
+
 .glider{
     width: 306px;
     height: 306px;
@@ -43,6 +47,7 @@ h1{
     flex-wrap: wrap;
     animation-name: glider;
     animation-duration: 5s;
+    margin-bottom: 1em;
 }
 
 .textillo{
@@ -130,7 +135,7 @@ body{
   to{border-right-color: transparent;}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
 
     .line-1{
         position: relative;
@@ -148,7 +153,7 @@ body{
 
     .title{
         width: 110%;
-        margin-top: 45em;
+        margin-top: 50em;
         margin-bottom: 2em;
         border: 1px solid;
         padding: 1em;
@@ -195,3 +200,62 @@ a{
 a:hover{
     color: red;
 }
+
+
+
+
+@media only screen and (max-width: 320) {
+
+    .line-1{
+        position: relative;
+        top: 50%;  
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255,255,255,.75);
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);    
+    }
+
+
+    .title{
+        width: 110%;
+        margin-top: 200em;
+        margin-bottom: 2em;
+        border: 1px solid;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    .quote{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .me{
+    }
+
+
+     .autor{
+         display: block;
+         margin: 10px;
+     }
+
+     .texto-chafa{
+         text-align: center;
+     }
+
+    .glider{
+        margin-bottom: 2em;
+    }
+
+    .sub-proyectos{
+        margin-bottom: 5px;
+    }
+     
+
+   }
