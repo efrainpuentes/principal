@@ -1,0 +1,14 @@
+span{
+    color:red;
+}
+
+.icono-pdf:hover{
+    color:red;
+}
+
+.descarga-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

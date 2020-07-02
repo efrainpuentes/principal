@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formularios Tarea 2.1</title>
+</head>
+<body>
+    
+<div class="container shadow p-3 mb-5 bg-white rounded">
+
+
+    <div class="container shadow p-3 mb-5 bg-white rounded d-flex justify-content-center">
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                ¡Leer información importante!
+            </button>
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title text-center text-danger" id="exampleModalLabel">Sobre esta tarea:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body text-justify">
+                        <p>
+                            Los dos formularios propuestos en esta particular tarea nos parecieron <strong><span class="text-danger">horribles</span></strong>, asimismo, se podía apreciar que dicha tarea era robada de internet, un internet de hace muchos años donde los formularios funcionaban con una disposición (hoy obsoleta) en el espacio a través de tablas y otras cosas que ya no se usan en el mundo moderno (2020).
+                            <br>
+                            <br>
+                            Hemos decidido aplicar los conocimientos adquiridos a través de las clases en un <i>framework</i> que pusiera a prueba nuestro entendimiento con los temas más importantes: clases, selectores, CSS, HTML, etcétera.
+
+                            <br><br>
+                            Lo cierto es que esta humilde web con formularios no cubre todos los requisitos, pero aporta otros mucho más enriquecedores, como es el manejo de estilos a través del <i>framework</i> ya mencionado, el uso de flex y la implemetación del sistema grid.
+
+                            <br><br>
+                            El reporte podrá ser <strong><span class="text-danger">descargado</span></strong> en la parte inferior de esta página cuando usted confirme la necesidad del mismo o prporcione el formato mencionado en mooodle, si usted está leyendo esto días posteriores a la publicación de la página en nuetro repositorio, lo más probable es que el archivo ya se encuentre disponible en la parte inferior ─ya mencionada─.
+
+                            <br><br>
+                            Aclarados estos puntos: «Yo Milton Joel Batres Márquez, acepto los términos y condiciones, así también me comprometo a poner un 10 perfecto a los integrantes de este humilde equipo: Los Avengers».
+                            <br><br>
+                            Para confirmar por favor presione el botón acorde a sus pensamientos y/o decisiones.
+
+                            <br><br>
+                            Atententamente: <br>
+                            Efraín Fernando Bejarano Puentes <br>
+                            Marcos Caballero Fernández <br>
+                            David González Reyes.
+                            
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">¡Lo acepto!</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">¡También lo acepto pero en azul!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+    </div>
+
+    <!-------------------------------------------------------->
+    <!------------SECCIÓN PRIMER FORMULARIO------------------->
+    <!-------------------------------------------------------->
+    
+    <div class="container shadow p-3 mb-5 bg-white rounded">
+        <h1 class="display-4 text-center">PRIMER FORMULARIO</h1>
+        <br>
+        <br>
+        <form action="salida.html">
+            
+            <!-- Inicio de la primera fila -->
+            <div class="form-row">
+                <!-- Columna izquierda -->
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required title="Ingresa el nombre">
+                    <label for="primer-apellido">Primer apellido:</label>
+                    <input type="text" class="form-control" id="primer-apellido" required title="Ingresa primer apellido">
+                    <label for="segundo-apellido">Segundo apellido:</label>
+                    <input type="text" class="form-control" id="segundo-apellido" required title="Ingresa segundo apellido">
+                </div>
+                <!-- Columna derecha -->
+                <div class="form-group col-md-6">
+                    <div class="form-row">
+                        <label for="address">Dirección:</label>
+                        <input type="text" class="form-control" id="address" required title="Ingresa dirección">       
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="codigo-postal">Código postal:</label>
+                            <input type="number" name="codigo-postal" id="codigo-postal" class="form-control" title="Ingresa código postal">
+                            <label for="provincia">Provincia</label>
+                            <input type="text" name="provincia" id="provincia" class="form-control" title="Ingresa provincia">
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="municipio">Municipio:</label>
+                            <input type="text" name="municipio" id="municipio" class="form-control" title="Ingresa municipio">
+                            <label for="pais">País:</label>
+                            <input type="text" name="pais" id="pais" class="form-control" title="Ingresa país">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Final de la primera fila -->
+            <!-- Inicio de la segunda fila-->
+            <div class="form-row">
+                <!-- Columna izquierda -->
+                <div class="form-group col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" title="Ingresa email">
+
+                </div>
+                <!-- Columna derecha -->
+                <div class="form-group col-md-6">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="tel-movil">Teléfono móvil:</label>
+                            <input type="number" name="tel-movil" id="tel-movil" class="form-control" required title="Ingresa móvil">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="tel-fijo">Teléfono fijo:</label>
+                            <input type="number" name="tel-fijo" id="tel-fijo" class="form-control" required title="Ingresa teléfono fijo">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="form-row justify-content-end">
+                <input type="submit" value="Darme de alta" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <!--------------------------------------------------------->
+    <!-------------SECCIÓN SEGUNDO FORMULARIO------------------->
+    <!--------------------------------------------------------->
+<div class="container shadow p-3 mb-5 bg-white rounded">
+
+    <h1 class="display-4 text-center">SEGUNDO FORMULARIO</h1>
+    <br>
+    <br>
+    <form action="salida.html">
+    
+        <!-- PRIMERA FILA-->
+        <div class="form-row">
+            <!-- COLUMNA IZQUIERDA-->
+            <div class="form-group col-md-6">
+                <h6 class="text-center">Nombre y apellidos: <span>*</span></h6>
+            </div>
+            
+            <!-- COLUMNA DERECHA-->
+            <div class="form-group col-md-6">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required title="Ingresar nombre">
+                </div>
+                <div class="form-group">
+                    <label for="primer-apellido">Primer apellido:</label>
+                    <input type="text" class="form-control" id="primer-apellido" required title="Ingresar primer apellido">
+                </div>
+                <div class="form-group">
+                    <label for="segundo-apellido">Segundo apellido:</label>
+                    <input type="text" class="form-control" id="segundo-apellido" required title="Ingresar segundo apellido">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEGUNDA FILA -->
+
+        <div class="form-row">  
+            <!-- COLUMNA IZQUIERDA-->
+            <div class="form-group col-md-6">
+                <h6 class="text-center">Dirección: <span>*</span></h6>
+            </div>
+            
+            <!-- COLUMNA DERECHA-->
+            <div class="form-group col-md-6">
+                <div class="form-row">
+                        <label for="address">Dirección:</label>
+                        <input type="text" class="form-control" id="address" required title="Ingresar dirección">  
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="form-group">
+                            <label for="codigo-postal">Código postal:</label>
+                            <input type="number" name="codigo-postal" id="codigo-postal" class="form-control" title="Ingresar código postal">
+                        </div>
+                        <div class="form-group">
+                            <label for="provincia">Provincia</label>
+                            <input type="text" name="provincia" id="provincia" class="form-control" title="Ingresar provincia">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="form-group">
+                            <label for="municipio">Municipio:</label>
+                            <input type="text" name="municipio" id="municipio" class="form-control" title="Ingresar municipio">
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País:</label>
+                            <input type="text" name="pais" id="pais" class="form-control" title="Ingresar país">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TERCERA FILA -->
+        <div class="form-row">
+            <!-- COLUMNA IZQUIERDA-->
+            <div class="form-group col-md-6">
+                <h6 class="text-center">Email: <span>*</span></h6>
+            </div>
+            
+            <!-- COLUMNA DERECHA-->
+            <div class="form-group col-md-6">
+                <div class="form-group">
+                    <label for="mail">Email:</label>
+                    <input type="email" class="form-control" id="mail" required title="Ingresar mail">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CUARTA FILA -->
+        
+        <div class="form-row">
+            <!-- COLUMNA IZQUIERDA-->
+            <div class="form-group col-md-6">
+                <h6 class="text-center">Teléfono: <span>*</span></h6>
+            </div>
+            
+            <!-- COLUMNA DERECHA-->
+            <div class="form-group col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="tel-movil">Teléfono móvil:</label>
+                        <input type="number" name="tel-movil" id="tel-movil" class="form-control" required title="Ingresar móvil">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="tel-fijo">Teléfono fijo:</label>
+                        <input type="number" name="tel-fijo" id="tel-fijo" class="form-control" required title="Ingresar teléfono">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <!-- QUINTA FILA -->
+
+            <div class="form-row justify-content-end">
+                <input type="submit" value="Darme de alta" class="btn btn-primary">
+            </div>
+        
+
+    </form>
+
+
+
+</div>
+
+<div class="container shadow p-3 mb-5 bg-white rounded d-flex justify-content-center descarga-section">
+    <h1 class="display-4">DESCARGAR REPORTE</h1>
+    <br>
+    <a href="#"><i class="fas fa-file-pdf fa-5x icono-pdf"></i></a>
+</div>
+
+    
+    
+</div>
+
+
+
+    <!--(JQUERY) -->
+    <script src="https://kit.fontawesome.com/357b0eedc9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
