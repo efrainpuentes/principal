@@ -7,6 +7,8 @@
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <!-- Compilado Bootstrap + Custom-->
     <link rel="stylesheet" href="css/main.css">
     <!-- Google fonts-->
@@ -16,6 +18,7 @@
 </head>
 <body>
 
+    <!-- Sección 0: Barra de navegación. -->
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-logo">
             <img src="img/glider.png" alt="logo glider" width="30px" height="30px" class="img-logo">
@@ -29,41 +32,388 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <!-- Barra a colapsar con el botón -->
         <div class="collapse navbar-collapse" id="navbarPrincipal">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">Home</a>
+                    <a href="#" class="nav-link text-center">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">Projects</a>
+                    <a href="#skills" class="nav-link text-center">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">About me</a>
+                    <a href="#" class="nav-link text-center">SOCIAL</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">Contact</a>
+                    <a href="#" class="nav-link text-center">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!--Utilzando el patrón de diseño: showcase-->
+    <!-- Primer sección: Shwocase-->
     <section id="showcase" class="d-flex justify-content-center align-items-center">
-
         <!--Overlay para contraste entre la furnte y la imagen del showcase-->
         <div class="overlay"></div>
 
 
         <div id="header" class="header container text-white text-center">
             <h3 class="mb-0">FERNANDO PUENTES</h3>
-            <h1 class="">SOFTWARE <span class="title-bracket">[</span>DEVELOPER<span class="title-bracket">]:<span class="blinking-cursor">|</span></span></h1>
+            <h1>SOFTWARE <span class="title-bracket">[</span>DEVELOPER<span class="title-bracket">]:<span class="blinking-cursor">|</span></span></h1>
             <p class="lead d-none d-md-block showcase-paragraph">Giving a <span class="word-paragraph">solution</span> to your needs through science, engineering and technology.</p>
             <button id="contact-button" class="btn-md p-2 btn-primary px-5">CONTACT ME!</button>
         </div>
+    </section>
 
+
+    <!-- Segunda sección: skills-->
+    <section>
+        <div class="container text-center mt-5" id="skills">
+            <h3>PROGRAMMING <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+            <p>I can help you through the following technologies:</p>
+            
+            <!-- Secciones iconos/skills -->
+
+            <!-- Priera fila-->
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="img/icon1.png" alt="html icon">
+                <h3 class="skill-title">HTML5</h3>
+              </div>
+              <div class="col-md-3">
+                  <img src="img/icon2.png" alt="css icon">
+                <h3 class="skill-title">CSS3</h3>
+              </div>
+              <div class="col-md-3">
+                <img src="img/icon3.png" alt="javascript logo">
+                <h3 class="skill-title">JAVASCRIPT</h3>
+              </div>
+              <div class="col-md-3">
+                <img src="img/icon4.png" alt="mysql logo" width="144px">
+                <h3 class="skill-title">MySQL</h3>
+                </div>
+          </div> 
+          
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="img/logo4.png" alt="java logo">
+                  <h3 class="skill-title">JAVA</h3>
+              </div>
+
+              <div class="col-md-3">
+                  <img src="img/icon5.png" alt="php logo" width="148px">
+                  <h3 class="skill-title">PHP</h3>
+              </div>
+              <div class="col-md-3">
+                <img src="img/icon6.png" alt="Spring logo">
+                <h3 class="skill-title">SPRING</h3>
+            </div>
+            <div class="col-md-3">
+                <img src="img/icon7.png" alt="Bootstrap logo">
+                <h3 class="skill-title">BOOTSTRAP</h3>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="img/icon8.png" alt="logo react">
+                  <h3 class="skill-title">REACT.JS</h3>
+              </div>
+              <div class="col-md-3">
+                <img src="img/icon9.png" alt="logo laravel">
+                <h3 class="skill-title">LARAVEL</h3>
+            </div>
+
+            <div class="col-md-3">
+                <img src="img/icon10.png" alt="logo wordpress" width="148px">
+                <h3 class="skill-title">WORDPRESS</h3>
+            </div>
+            <div class="col-md-3">
+                <img src="img/sass.png" alt="icono sass" width="148px">
+                <h3 class="skill-title">SASS</h3>
+            </div>
+          </div>
+          
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="img/icon11.png" alt="linux logo" width="148px">
+                  <h3 class="skill-title">BASH SCRIPTING</h3>
+              </div>
+              <div class="col-md-3">
+                  <img src="img/icon12.png" alt="icono mongo" width="148px">
+                  <h3 class="skill-title">MONGO DB</h3>
+              </div>
+              <div class="col-md-3">
+                  <img src="img/icon13.png" alt="icono rest" width="148px">
+                  <h3 class="skill-title">REST API</h3>
+              </div>
+              <div class="col-md-3">
+                  <img src="img/icon14.png" alt="android logo">
+                  <h3 class="skill-title">ANDROID</h3>
+              </div>
+          </div>
+          
+
+
+        </div>
+    </section>
+    <hr>
+
+        <!-- Sección: Quote -->
+        <section id="quote-1">
+
+            <div class="container text-center">
+                <div class="row">
+                    <!-- cita -->
+                    <div class="my-2 col-12">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <blockquote class="blockquote">
+                            <i><p class="mb-0 quote-paragraph">If I don't know how to do it, I assure you I'll find the way.</p></i>
+                        </blockquote>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+        <hr>
+
+    <!-- Section S.O-->
+
+    <section>
+
+        <div class="container text-center mt-5" id="systems">
+
+            <h3>OPERATING SYSTEMS <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+            <p> Experience in the three most used operating systems. <br>
+                I personally prefer any UNIX based system.
+            </p>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/sistem1.png" alt="mac logo">
+                    <h3 class="skill-title">MAC</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/sistem2.png" alt="windows logo">
+                    <h3 class="skill-title">WINDOWS</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/sistem3.png" alt="Linux logo" width="128px">
+                    <h3 class="skill-title">LINUX</h3>
+                </div>
+            </div>
+        </div>
 
     </section>
+    <hr>
+    
+    <!-- IoT  -->
+    <section>
+        <div class="container text-center mt-5" id="hardware">
+            <h3>IOT <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+            <p>My degree in IoT development has made me learn modern hardware.</p>
+           
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/har1.png" alt="Arduino logo"> 
+                    <h3 class="skill-title">ARDUINO</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/har2.png" alt="Raspberry logo"> 
+                    <h3 class="skill-title">RASPBERRY</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+        <!-- Graphic  -->
+        <section>
+            <div class="container text-center mt-5" id="graphic">
+                <h3>GRPHIC <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+                <p>
+                    I am not a graphic designer, but I have years of experience using the software.
+                </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/g1.png" alt="Photoshop logo"> 
+                        <h3 class="skill-title">PHOTOSHOP</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/g2.png" alt="Premiere logo"> 
+                        <h3 class="skill-title">PREMIERE</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/g3.png" alt="After logo"> 
+                        <h3 class="skill-title">AFTER</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/g4.png" alt="Raspberry logo" width="144px"> 
+                        <h3 class="skill-title">GIMP</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <hr>
+
+        <!-- Sección: Quote II -->
+        <section id="quote-2">
+
+            <div class="container text-center">
+                <div class="row">
+                    <!-- cita -->
+                    <div class="my-2 col-12">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <blockquote class="blockquote">
+                            <i><p class="mb-0 quote-paragraph">Teach the ignorant as much as you can; society is culpable in not providing a free education for all and it must answer for the night which it produces. If the soul is left in darkness sins will be committed. The guilty one is not he who commits the sin, but he who causes the darkness.</p></i>
+                            <footer class="blockquote-footer">Victor Hugo.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+
+        <hr>
+
+        <section>
+        <div class="container text-center mt-5" id="communication">
+
+            <h3>COMMUNICATION <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+            <p>Over the years I have worked on science communication and computer science teaching projects. Including publication in various digital magazines and reaching up to 40k monthly readings on my sites.</p>
+
+
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                <img src="img/blog1.png" alt="blog logo" width="150px" class="blog-logo blog-ciencia">
+                    <h3 class="skill-title mt-2">CIENCIA VULGAR</h3>
+                    <a href="https://cienciavulgar.wordpress.com/" target="_blank">
+                        <button id="ciencia-button" class="btn-md p-2 btn-primary px-5">GO!</button>
+                    </a>
+                </div>
+
+                <div class="col-md-6 mt-5">
+                    <img src="img/blog2.png" alt="blog logo" width="150px" class="blog-logo blog-script"></a>
+                    <h3 class="skill-title mt-2">SCRIPT KIDDIE</h3>
+                    <a href="https://scriptkiddierror404.wordpress.com/" target="_blank">
+                        <button id="script-button" class="btn-md p-2 btn-primary px-5">GO!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <hr>
+
+        <section>
+            <div class="container text-center mt-5" id="soft-skills">
+                <h3>SOFT <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+                <p>
+                    I consider that a professional is not only made up of technical knowledge, but also of his way of relating and adapting to the environment.
+                </p>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <img src="img/soft1.png" alt="communication image">
+                        <h3 class="skill-title">COMMUNICATION</h3>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/soft2.png" alt="team work image" width="64px">
+                        <h3 class="skill-title">TEAMWORK</h3>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/soft3.png" alt="Problem image">
+                        <h3 class="skill-title">PROBLEM SOLVING</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/soft4.png" alt="creativity image" width="64px">
+                        <h3 class="skill-title">CREATIVITY</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/soft5.png" alt="empathy image">
+                        <h3 class="skill-title">EMPATHY</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/soft6.png" alt="leadership image">
+                        <h3 class="skill-title">LEADERSHIP</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- SECCIÓN DE PROYECTOS
+        <section>
+
+        </section>
+    -->
+
+            <!-- Sección: Quote III -->
+        <section id="quote-3">
+
+            <div class="container text-center">
+                <div class="row">
+                    <!-- cita -->
+                    <div class="my-2 col-12">
+                        <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                        <blockquote class="blockquote">
+                            <i><p class="mb-0 quote-paragraph">My mind rebels at stagnation. Give me problems, give me work, give me the most abstruse cryptogram, or the most intricate analysis, and I am in my own proper atmosphere.</p></i>
+                            <footer class="blockquote-footer">Sherlock Holmes.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+        <hr>
+
+        <!-- Chemical engineering section -->
+        <section>
+            <div class="container text-center mt-5" id="chemical">
+
+                <h3>CHEMICAL ENGINEERING <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+                <p>
+                    I am not only a software developer, I am also a chemical engineer, this gives me different approaches to problem solving.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/ch1.png" alt="essay tube image" width="144px">
+                        <h3 class="skill-title">LABORATORY</h3>
+                        <p>Experience working in the laboratory doing all kinds of chemometric analysis and characterization.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/ch2.png" alt="team work image" width="144px">
+                        <h3 class="skill-title">PROCESS DESIGN</h3>
+                        <p>Experience designing and analyzing the efficiency of large-scale processes.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="img/ch3.png" alt="Problem image" width="144px">
+                        <h3 class="skill-title">ECONOMY</h3>
+                        <p>Experience making economic balances and looking for feasible solutions.</p>                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
 
 
 <!-- Dependencias Bootstrap-->

@@ -345,7 +345,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
 
 small,
 .small {
@@ -7801,8 +7801,12 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+html {
+  scroll-behavior: smooth; }
+
 body {
-  background-color: #000; }
+  background-color: #2f2f2f;
+  color: white; }
 
 /* INICIO ESTILO GLIDER Y NAVBAR */
 .title-logo {
@@ -7813,7 +7817,7 @@ body {
 .navbar {
   font-family: 'Inconsolata', monospace;
   font-weight: 200;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -7852,12 +7856,14 @@ body {
     line-height: 1; }
   #showcase h3 {
     font-family: 'Montserrat', sans-serif; }
-  #showcase #contact-button {
+  #showcase #contact-button, #showcase #script-button, #showcase #ciencia-button {
     border-radius: 1em;
     border: none; }
-  #showcase #contact-button:hover {
+  #showcase #contact-button:hover, #showcase #script-button:hover, #showcase #ciencia-button:hover {
     background-color: #427d43;
     color: white; }
+  #showcase #contact-button:focus, #showcase #script-button:focus, #showcase #ciencia-button:focus {
+    outline: none; }
   #showcase .title-bracket {
     color: #3ac95a;
     font-weight: 700; }
@@ -7908,6 +7914,45 @@ body {
     color: transparent; }
   50% {
     color: white; } }
+/*global brackets*/
+.title-bracket {
+  color: #3ac95a;
+  font-weight: 700; }
+
+/* communicación*/
+#communication #script-button, #communication #ciencia-button {
+  border-radius: 1em;
+  border: none; }
+#communication #script-button:hover, #communication #ciencia-button:hover {
+  background-color: #427d43;
+  color: white; }
+#communication #script-button:focus, #communication #ciencia-button:focus {
+  outline: none; }
+
+.blog-logo {
+  border-radius: 100%; }
+
+.blog-logo:hover {
+  transition: width 0.5s;
+  width: 150px; }
+
+/*Estilos sección skills|systems */
+#skills h3, #systems h3, #hardware h3, #communication h3, #soft-skills h3, #graphic h3, #chemical h3 {
+  font-family: 'Montserrat', sans-serif; }
+#skills p, #systems p, #hardware p, #communication p, #soft-skills p, #graphic p, #chemical p {
+  font-weight: 200;
+  font-size: 1em; }
+#skills .skill-title, #systems .skill-title, #hardware .skill-title, #communication .skill-title, #soft-skills .skill-title, #graphic .skill-title, #chemical .skill-title {
+  font-size: 1em; }
+
+/* Estilos sección quote */
+#quote-1 h3, #quote-2 h3, #quote-3 h3 {
+  font-family: 'Montserrat', sans-serif; }
+#quote-1 p, #quote-2 p, #quote-3 p {
+  font-weight: 200; }
+#quote-1 i, #quote-2 i, #quote-3 i {
+  opacity: 1; }
+
 /* FIN ESTILO GLIDER Y NAVBAR */
 @media (max-width: 768px) {
   .navbar {
@@ -7920,7 +7965,13 @@ body {
   #showcase h1 {
     font-size: 1.5em; }
   #showcase h3 {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  #quote-1 h3 {
+    font-size: 1.5em;
+    font-weight: 500; }
+  #quote-1 p {
+    font-weight: 200; } }
 @media (max-width: 360px) {
   .navbar {
     max-width: 100%;
