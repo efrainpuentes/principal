@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="img/glider.png"/>
     <title>Fernando@developer</title>
 
 </head>
@@ -37,16 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarPrincipal">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">HOME</a>
+                    <a href="#showcase" class="nav-link text-center">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link text-center">SKILLS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">SOCIAL</a>
+                    <a href="#social-media" class="nav-link text-center">SOCIAL</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">CONTACT</a>
+                    <a href="contact-form.html" class="nav-link text-center" target="_blank">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -62,14 +64,14 @@
             <h3 class="mb-0">FERNANDO PUENTES</h3>
             <h1>SOFTWARE <span class="title-bracket">[</span>DEVELOPER<span class="title-bracket">]:<span class="blinking-cursor">|</span></span></h1>
             <p class="lead d-none d-md-block showcase-paragraph">Giving a <span class="word-paragraph">solution</span> to your needs through science, engineering and technology.</p>
-            <button id="contact-button" class="btn-md p-2 btn-primary px-5">CONTACT ME!</button>
+            <a href="contact-form.html"><button id="contact-button" class="btn-md p-2 btn-primary px-5">CONTACT ME!</button></a>
         </div>
     </section>
 
 
     <!-- Segunda sección: skills-->
     <section>
-        <div class="container text-center mt-5" id="skills">
+        <div class="container text-center my-5" id="skills">
             <h3>PROGRAMMING <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
             <p>I can help you through the following technologies:</p>
             
@@ -163,7 +165,7 @@
         <!-- Sección: Quote -->
         <section id="quote-1">
 
-            <div class="container text-center">
+            <div class="container text-center my-5">
                 <div class="row">
                     <!-- cita -->
                     <div class="my-2 col-12">
@@ -183,7 +185,7 @@
 
     <section>
 
-        <div class="container text-center mt-5" id="systems">
+        <div class="container text-center my-5" id="systems">
 
             <h3>OPERATING SYSTEMS <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
             <p> Experience in the three most used operating systems. <br>
@@ -211,20 +213,23 @@
     
     <!-- IoT  -->
     <section>
-        <div class="container text-center mt-5" id="hardware">
+        <div class="container text-center my-5" id="hardware">
             <h3>IOT <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
             <p>My degree in IoT development has made me learn modern hardware.</p>
            
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
                     <img src="img/har1.png" alt="Arduino logo"> 
                     <h3 class="skill-title">ARDUINO</h3>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <img src="img/har2.png" alt="Raspberry logo"> 
                     <h3 class="skill-title">RASPBERRY</h3>
                 </div>
+                <div class="col-md-3"></div>
             </div>
+
         </div>
 
     </section>
@@ -233,8 +238,8 @@
 
         <!-- Graphic  -->
         <section>
-            <div class="container text-center mt-5" id="graphic">
-                <h3>GRPHIC <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
+            <div class="container text-center my-5" id="graphic">
+                <h3>GRAPHIC <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
                 <p>
                     I am not a graphic designer, but I have years of experience using the software.
                 </p>
@@ -264,7 +269,7 @@
         <!-- Sección: Quote II -->
         <section id="quote-2">
 
-            <div class="container text-center">
+            <div class="container text-center my-5">
                 <div class="row">
                     <!-- cita -->
                     <div class="my-2 col-12">
@@ -283,35 +288,37 @@
         <hr>
 
         <section>
-        <div class="container text-center mt-5" id="communication">
+        <div class="container text-center my-5" id="communication">
 
             <h3>COMMUNICATION <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
             <p>Over the years I have worked on science communication and computer science teaching projects. Including publication in various digital magazines and reaching up to 40k monthly readings on my sites.</p>
 
 
             <div class="row">
-                <div class="col-md-6 mt-5">
-                <img src="img/blog1.png" alt="blog logo" width="150px" class="blog-logo blog-ciencia">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 mt-5">
+                    <img src="img/blog1.png" alt="blog logo" width="150px" class="blog-logo blog-ciencia">
                     <h3 class="skill-title mt-2">CIENCIA VULGAR</h3>
                     <a href="https://cienciavulgar.wordpress.com/" target="_blank">
                         <button id="ciencia-button" class="btn-md p-2 btn-primary px-5">GO!</button>
                     </a>
                 </div>
-
-                <div class="col-md-6 mt-5">
+                
+                <div class="col-md-3 mt-5">
                     <img src="img/blog2.png" alt="blog logo" width="150px" class="blog-logo blog-script"></a>
                     <h3 class="skill-title mt-2">SCRIPT KIDDIE</h3>
                     <a href="https://scriptkiddierror404.wordpress.com/" target="_blank">
                         <button id="script-button" class="btn-md p-2 btn-primary px-5">GO!</button>
                     </a>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </div>
         </section>
         <hr>
 
         <section>
-            <div class="container text-center mt-5" id="soft-skills">
+            <div class="container text-center my-5" id="soft-skills">
                 <h3>SOFT <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
                 <p>
                     I consider that a professional is not only made up of technical knowledge, but also of his way of relating and adapting to the environment.
@@ -362,7 +369,7 @@
             <!-- Sección: Quote III -->
         <section id="quote-3">
 
-            <div class="container text-center">
+            <div class="container text-center my-5">
                 <div class="row">
                     <!-- cita -->
                     <div class="my-2 col-12">
@@ -381,37 +388,66 @@
 
         <!-- Chemical engineering section -->
         <section>
-            <div class="container text-center mt-5" id="chemical">
-
+            <div class="container text-center my-5" id="chemical">
+                
                 <h3>CHEMICAL ENGINEERING <span class="title-bracket">[</span>SKILLS<span class="title-bracket">]</span></h3>
                 <p>
                     I am not only a software developer, I am also a chemical engineer, this gives me different approaches to problem solving.
                 </p>
-
+                
                 <div class="row">
                     <div class="col-md-4">
                         <img src="img/ch1.png" alt="essay tube image" width="144px">
                         <h3 class="skill-title">LABORATORY</h3>
                         <p>Experience working in the laboratory doing all kinds of chemometric analysis and characterization.</p>
                     </div>
-
+                    
                     <div class="col-md-4">
                         <img src="img/ch2.png" alt="team work image" width="144px">
                         <h3 class="skill-title">PROCESS DESIGN</h3>
                         <p>Experience designing and analyzing the efficiency of large-scale processes.</p>
                     </div>
-
+                    
                     <div class="col-md-4">
                         <img src="img/ch3.png" alt="Problem image" width="144px">
                         <h3 class="skill-title">ECONOMY</h3>
-                        <p>Experience making economic balances and looking for feasible solutions.</p>                        </p>
+                        <p>Experience making economic balances and looking for feasible solutions.</p>   
                     </div>
-
+                    
                 </div>
+                
+                
+            </div>
 
-
+        </section>
+        <hr>
+        
+        <section>
+            <div class="container text-center my-5" id="social-media">
+                <h3>SOCIAL <span class="title-bracket">[</span>MEDIA<span class="title-bracket">]</span></h3>
+                <p>Feel free to contact me through my social and professional networks.</p>
+                <!--Facebook, twitter, linkedin, github-->
+                <div class="row">
+                    <div class="col-md 4"></div>
+                    <div class="col-md-1 mt-3">
+                        <a href="https://www.facebook.com/efrain.neumann" target="_blank"><img src="img/social1.png" alt="facebook logo" width="50px"></a>
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <a href="https://twitter.com/home" target="_blank"><img src="img/social2.png" alt="twitter logo" width="50px"></a>
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <a href="https://github.com/efrainpuentes" target="_blank"><img src="img/social3.png" alt="github logo" width="50px"></a>
+                    </div>
+                    <div class="col-md-1 mt-3">
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="img/social4.png" alt="linkedin logo" width="50px"></a>
+                    </div>
+                    <div class="col-md 4"></div>
+                </div>
             </div>
         </section>
+        
+        <hr>    
+        
 
 
 

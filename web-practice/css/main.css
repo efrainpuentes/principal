@@ -7856,13 +7856,13 @@ body {
     line-height: 1; }
   #showcase h3 {
     font-family: 'Montserrat', sans-serif; }
-  #showcase #contact-button, #showcase #script-button, #showcase #ciencia-button {
+  #showcase #contact-button, #showcase #script-button, #showcase #ciencia-button, #showcase #contact-me-button {
     border-radius: 1em;
     border: none; }
-  #showcase #contact-button:hover, #showcase #script-button:hover, #showcase #ciencia-button:hover {
+  #showcase #contact-button:hover, #showcase #script-button:hover, #showcase #ciencia-button:hover, #showcase #contact-me-button:hover {
     background-color: #427d43;
     color: white; }
-  #showcase #contact-button:focus, #showcase #script-button:focus, #showcase #ciencia-button:focus {
+  #showcase #contact-button:focus, #showcase #script-button:focus, #showcase #ciencia-button:focus, #showcase #contact-me-button:focus {
     outline: none; }
   #showcase .title-bracket {
     color: #3ac95a;
@@ -7937,13 +7937,21 @@ body {
   width: 150px; }
 
 /*Estilos sección skills|systems */
-#skills h3, #systems h3, #hardware h3, #communication h3, #soft-skills h3, #graphic h3, #chemical h3 {
+#skills h3, #systems h3, #hardware h3, #communication h3, #soft-skills h3, #graphic h3, #chemical h3, #social-media h3 {
   font-family: 'Montserrat', sans-serif; }
-#skills p, #systems p, #hardware p, #communication p, #soft-skills p, #graphic p, #chemical p {
+#skills p, #systems p, #hardware p, #communication p, #soft-skills p, #graphic p, #chemical p, #social-media p {
   font-weight: 200;
   font-size: 1em; }
-#skills .skill-title, #systems .skill-title, #hardware .skill-title, #communication .skill-title, #soft-skills .skill-title, #graphic .skill-title, #chemical .skill-title {
+#skills .skill-title, #systems .skill-title, #hardware .skill-title, #communication .skill-title, #soft-skills .skill-title, #graphic .skill-title, #chemical .skill-title, #social-media .skill-title {
   font-size: 1em; }
+
+#social-media img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.5s; }
+
+.under-const {
+  font-weight: 100; }
 
 /* Estilos sección quote */
 #quote-1 h3, #quote-2 h3, #quote-3 h3 {
