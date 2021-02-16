@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hotpink;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.corazon {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  animation: latido 1s ease infinite;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title {
+  color: white;
+  margin-bottom: 2em;
+  font-family: "Passion One", cursive;
+  font-size: 70px;
+}
+
+.corazon:before {
+  top: -50px;
+  left: 0;
+}
+
+.corazon:after {
+  left: 50px;
+  top: 0;
+}
+
+.corazon:before,
+.corazon:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.container {
+  transform: rotate(-45deg);
+}
